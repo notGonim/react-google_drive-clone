@@ -9,12 +9,14 @@ import Login from "./auth/Login"
 import ForgotPassword from "./auth/ForgotPassword"
 import Signup from "./auth/Signup"
 import { CenteredContainer } from "./CenteredContainer"
+import { Dashboard } from "./google-drive/Dashboard"
 
 function App() {
   return (
     <Router>
       <AuthProvider>
         <Switch>
+          <PrivateRoute exact path="/" component={Dashboard} />
           <PrivateRoute exact path="/user" component={Profile} />
           <PrivateRoute path="/update-profile" component={UpdateProfile} />
           <Route path="/signup" component={Signup} />
