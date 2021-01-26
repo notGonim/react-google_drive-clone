@@ -1,5 +1,4 @@
 import React from "react"
-import { Container } from "react-bootstrap"
 import { AuthProvider } from "../contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Profile from "./auth/Profile"
@@ -8,7 +7,6 @@ import UpdateProfile from "./auth/UpdateProfile"
 import Login from "./auth/Login"
 import ForgotPassword from "./auth/ForgotPassword"
 import Signup from "./auth/Signup"
-import { CenteredContainer } from "./CenteredContainer"
 import { Dashboard } from "./google-drive/Dashboard"
 
 function App() {
